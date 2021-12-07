@@ -26,7 +26,6 @@ const MealDetailScreen = (props) => {
   );
   const selectedMeal = availableMeals.find((meal) => meal.id === mealId);
 
-  console.log(selectedMeal);
   let { duration, complexity, affordability } = selectedMeal;
 
   const dispatch = useDispatch();

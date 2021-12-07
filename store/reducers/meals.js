@@ -37,7 +37,6 @@ const mealsReducer = (state = initialState, action) => {
         if (!meal.isVegetarian && appliedFilters.isVegetarian) return false;
         return true;
       });
-      console.log("filteredMeals", filteredMeals);
       return {
         ...state,
         filteredMeals,
